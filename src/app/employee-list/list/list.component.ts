@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { EmployeeData } from '../../shared/list-generator.service';
 import { List } from 'immutable';
 
 @Component({
