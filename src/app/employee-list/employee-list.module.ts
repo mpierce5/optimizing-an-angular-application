@@ -5,6 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatInputModule, MatListModule, MatCommonModule, MatChipsModule } from '@angular/material';
 
 import { EmployeeListComponent } from './employee-list.component';
+import { NameInputComponent } from './name-input/name-input.component';
+import { ListComponent } from './list/list.component';
+import { CalculatePipe } from './calculate.pipe';
 
 @NgModule({
   imports: [
@@ -17,7 +20,7 @@ import { EmployeeListComponent } from './employee-list.component';
     MatInputModule,
     MatChipsModule
   ],
-  declarations: [EmployeeListComponent],
+  declarations: [EmployeeListComponent, NameInputComponent, ListComponent, CalculatePipe],
   exports: [EmployeeListComponent]
 })
 export class EmployeeListModule {}
